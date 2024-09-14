@@ -140,6 +140,7 @@
             color: #ccc;
         }
      /* Estilos para o banner no rodapé */
+/* Estilos para o banner no rodapé */
 .footer-banner {
     display: flex;
     justify-content: space-between;
@@ -152,6 +153,7 @@
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    max-width: 100vw; /* Impede que ultrapasse a largura da tela */
     flex-wrap: wrap;
 }
 
@@ -159,14 +161,13 @@
     width: 50px;
     height: 50px;
     border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
 }
 
 .footer-banner .footer-text {
     flex-grow: 1;
-    text-align: left;
-    margin-left: 15px;
     color: #fff;
-    min-width: 150px;
 }
 
 .footer-banner .footer-text h3 {
@@ -256,6 +257,7 @@
 
         <!-- Banner no rodapé -->
 <!-- Banner no rodapé -->
+<!-- Banner no rodapé -->
 <div class="footer-banner">
     <img src="https://play-lh.googleusercontent.com/Ki0OaYHMw67Yw1ETHV2eyKZAST7JMVjCIrNGzmcadwHEkhq3BU_CYtt1IC9ZqKcE7iA=w240-h480-rw" alt="Ícone do App">
     <div class="footer-text">
@@ -264,6 +266,7 @@
     </div>
     <a href="#" class="download-button">Baixar</a>
 </div>
+
 
 
 
