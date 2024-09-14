@@ -140,11 +140,10 @@
             color: #ccc;
         }
      /* Estilos para o banner no rodapé */
-/* Estilos para o banner no rodapé */
+     /* Estilos para o banner no rodapé */
 .footer-banner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.8); /* Preto mais claro */
     padding: 10px 20px;
     border-top: 1px solid #333;
@@ -152,23 +151,25 @@
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
     box-sizing: border-box;
     max-width: 100vw; /* Impede que ultrapasse a largura da tela */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse o container */
 }
 
 .footer-banner img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
     object-fit: cover;
-    margin-right: 10px; /* Reduzi o espaçamento entre o ícone e o nome */
+    margin-right: 10px;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     color: #fff;
+    margin-right: 10px;
 }
 
 .footer-content h3 {
@@ -185,14 +186,14 @@
 .download-button {
     background-color: #28a745; /* Verde */
     color: white;
-    padding: 8px 15px; /* Reduzi o tamanho do botão */
+    padding: 8px 12px; /* Reduzi ainda mais o tamanho do botão */
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
     font-size: 0.9em; /* Ajuste no tamanho da fonte */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, box-shadow 0.3s;
-    margin-left: auto; /* Alinha o botão à direita */
+    white-space: nowrap; /* Impede que o botão quebre em várias linhas */
 }
 
 .download-button:hover {
@@ -218,7 +219,6 @@
         text-align: center;
     }
 }
-
 
     </style>
 </head>
@@ -252,8 +252,7 @@
     <footer>
 
         <!-- Banner no rodapé -->
-<!-- Banner no rodapé -->
-<!-- Banner no rodapé -->
+
 <div class="footer-banner">
     <img src="https://play-lh.googleusercontent.com/Ki0OaYHMw67Yw1ETHV2eyKZAST7JMVjCIrNGzmcadwHEkhq3BU_CYtt1IC9ZqKcE7iA=w240-h480-rw" alt="Ícone do App">
     <div class="footer-content">
@@ -262,6 +261,7 @@
     </div>
     <a href="#" class="download-button">Baixar</a>
 </div>
+
 
 
 
