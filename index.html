@@ -140,84 +140,81 @@
             color: #ccc;
         }
      /* Estilos para o banner no rodapé */
-     /* Estilos para o banner no rodapé */
+    footer {
+  background-color: #f0f0f0; /* Cor de fundo do rodapé */
+  padding: 20px;
+}
+
 .footer-banner {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Preto mais claro */
-    padding: 10px 20px;
-    border-top: 1px solid #333;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
-    max-width: 100vw; /* Impede que ultrapasse a largura da tela */
-    overflow: hidden; /* Evita que o conteúdo ultrapasse o container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-top: 1px solid #333;
 }
 
 .footer-banner img {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    color: #fff;
-    margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-right: 10px;
 }
 
 .footer-content h3 {
-    margin: 0;
-    font-size: 1.1em;
-    font-weight: bold;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .footer-content p {
-    margin: 5px 0 0;
-    font-size: 0.85em;
+  margin: 5px 0 0;
+  font-size: 0.85em;
 }
 
 .download-button {
-    background-color: #28a745; /* Verde */
-    color: white;
-    padding: 8px 12px; /* Reduzi ainda mais o tamanho do botão */
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.9em; /* Ajuste no tamanho da fonte */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    white-space: nowrap; /* Impede que o botão quebre em várias linhas */
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  max-width: 150px; /* Limita a largura do botão */
 }
 
 .download-button:hover {
-    background-color: #218838; /* Verde mais escuro no hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #218838;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Tornar o banner responsivo para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
-    .footer-banner {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
+  .footer-banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    .footer-content {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .footer-content {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
-    .download-button {
-        width: 100%;
-        text-align: center;
-    }
+  .download-button {
+    width: 100%;
+    text-align: center;
+  }
 }
 
     </style>
@@ -253,14 +250,14 @@
 
         <!-- Banner no rodapé -->
 
-<div class="footer-banner">
+  <div class="footer-banner">
     <img src="https://play-lh.googleusercontent.com/Ki0OaYHMw67Yw1ETHV2eyKZAST7JMVjCIrNGzmcadwHEkhq3BU_CYtt1IC9ZqKcE7iA=w240-h480-rw" alt="Ícone do App">
     <div class="footer-content">
-        <h3>Recibo para Clientes</h3>
-        <p>Gere recibos profissionais com facilidade. Baixe agora!</p>
+      <h3>Recibo para Clientes</h3>
+      <p>Gere recibos profissionais com facilidade. Baixe agora!</p>
     </div>
     <a href="#" class="download-button">Baixar</a>
-</div>
+  </div>
 
 
 
