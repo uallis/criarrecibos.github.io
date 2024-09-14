@@ -140,18 +140,27 @@
             color: #ccc;
         }
      /* Estilos para o banner no rodapé */
-    footer {
+/* Estilos para o rodapé fixo */
+footer {
   background-color: #f0f0f0; /* Cor de fundo do rodapé */
   padding: 20px;
+  position: relative; /* Permite que o rodapé tenha um comportamento fixo */
 }
 
+/* Estilos para o banner no rodapé */
 .footer-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Preto mais claro */
   padding: 10px 20px;
   border-top: 1px solid #333;
+  position: fixed; /* Fixa o banner no rodapé */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  z-index: 1000; /* Garante que o banner fique acima de outros elementos */
 }
 
 .footer-banner img {
@@ -181,7 +190,7 @@
 }
 
 .download-button {
-  background-color: #28a745;
+  background-color: #28a745; /* Verde */
   color: white;
   padding: 8px 12px;
   text-decoration: none;
@@ -191,10 +200,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, box-shadow 0.3s;
   max-width: 150px; /* Limita a largura do botão */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
 }
 
 .download-button:hover {
-  background-color: #218838;
+  background-color: #218838; /* Verde mais escuro no hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -216,6 +226,7 @@
     text-align: center;
   }
 }
+
 
     </style>
 </head>
