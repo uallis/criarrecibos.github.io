@@ -139,6 +139,60 @@
             font-size: 0.9em;
             color: #ccc;
         }
+        /* Estilos para o banner no rodapé */
+.footer-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003f8a;
+    padding: 20px;
+    border-top: 1px solid #002f6c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-banner img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.footer-banner .footer-text {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.footer-banner .footer-text h3 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.footer-banner .footer-text p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.footer-banner .download-button {
+    background-color: #004499;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.footer-banner .download-button:hover {
+    background-color: #003377;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
     </style>
 </head>
 <body>
@@ -169,6 +223,19 @@
     </div>
 
     <footer>
+
+        <!-- Banner no rodapé -->
+<div class="footer-banner">
+    <img src="https://play-lh.googleusercontent.com/Ki0OaYHMw67Yw1ETHV2eyKZAST7JMVjCIrNGzmcadwHEkhq3BU_CYtt1IC9ZqKcE7iA=w240-h480-rw" alt="Ícone do App">
+    <div class="footer-text">
+        <h3>Recibo para Clientes</h3>
+        <p>Gere recibos profissionais com facilidade. Baixe agora!</p>
+    </div>
+    <a href="#" class="download-button">Baixar</a>
+</div>
+
+
+        
         © 2024 USC Apps. Todos os direitos reservados. <br>
         Crie recibos em PDF rapidamente com nosso criador de recibos online.
     </footer>
